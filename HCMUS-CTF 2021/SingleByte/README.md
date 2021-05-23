@@ -1,5 +1,7 @@
 ## SingleByte
 
+#### Solved by naul
+
 ```
 Yup!!!! You know it!!! The very simple encryption technique that has the perfect secrecy.
 

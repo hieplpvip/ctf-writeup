@@ -1,5 +1,7 @@
 ## TheChosenOne
 
+#### Solved by naul
+
 ```
 The cryptography technique can be good, but the implementation is bad. Do you know the weakness of AES-ECB? (Inspired from some old stuff with a little bit easier =D )
 

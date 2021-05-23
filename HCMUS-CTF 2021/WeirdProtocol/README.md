@@ -1,5 +1,7 @@
 ## WeirdProtocol
 
+#### Solved by naul
+
 ```
 I don't know how the program communicate with the server ...
 

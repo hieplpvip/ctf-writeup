@@ -1,5 +1,7 @@
 ## bhide
 
+#### Solved by hieplpvip
+
 ```
 I hide a secret in the picture. Can you find it?
 

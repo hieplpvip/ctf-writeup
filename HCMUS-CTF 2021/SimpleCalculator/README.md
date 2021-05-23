@@ -1,5 +1,7 @@
 ## SimpleCalculator
 
+#### Solved by Fluoxetine
+
 ```
 Some restriction should prevent this simple calculator from being hacked. Right?
 

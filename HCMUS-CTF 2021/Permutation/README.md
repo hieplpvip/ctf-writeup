@@ -1,5 +1,7 @@
 ## Permutation
 
+#### Solved by hieplpvip
+
 ```
 Playing around with permutation is fun. nc 61.28.237.24 30303
 

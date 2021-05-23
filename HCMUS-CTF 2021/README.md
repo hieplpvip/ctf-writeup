@@ -2,6 +2,15 @@
 
 ## Qualification Round
 
+My team (NaN) solved all challenges after 26 hours 33 minutes and took the second place.
+
+Team members:
+
+- naul (Pham Kha Luan)
+- nhanlun (Nguyen Thanh Nhan)
+- hieplpvip (Le Bao Hiep)
+- Fluoxetine (Tran Quoc Thang)
+
 ### Web
 
 - [Nothingness](./Nothingness)

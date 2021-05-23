@@ -1,5 +1,7 @@
 ## StrangerThing
 
+#### Solved by hieplpvip
+
 ```
 This is not a difficult challenge. Just make sure that you can use linux :)
 

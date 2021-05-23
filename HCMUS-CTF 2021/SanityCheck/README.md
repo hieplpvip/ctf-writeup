@@ -1,5 +1,7 @@
 ## SanityCheck
 
+#### Solved by naul
+
 ```
 Welcome to HCMUS_-CTF 2021. We're Blackpinker.
 

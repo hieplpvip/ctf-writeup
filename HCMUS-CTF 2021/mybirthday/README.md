@@ -1,5 +1,7 @@
 ## mybirthday
 
+#### Solved by nhanlun
+
 ```
 Can you guess my birthday? Or you can just gimme the flag :)
 
