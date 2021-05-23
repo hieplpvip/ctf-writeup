@@ -48,4 +48,6 @@ with open('fixed.jpg', 'wb') as f:
 
 `fixed.jpg` can't be opened yet because its magic number is wrong. Patch it to `FF D8 FF E0 00 10 4A 46 49 46 00 01` and we can finally open it.
 
+![](fixed.jpg)
+
 Flag: `HCMUS-CTF{You_Know_How_To_Manipulate_Images_1324587}`
