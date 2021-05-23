@@ -45,4 +45,4 @@ ls
 cat flag.txt
 ```
 
-The flag is `HCMUS-CTF{Just_A_Warm_Up_Pwn}`
+Flag: `HCMUS-CTF{Just_A_Warm_Up_Pwn}`
