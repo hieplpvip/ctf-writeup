@@ -9,3 +9,5 @@ Some restriction should prevent this simple calculator from being hacked. Right?
 
 authors: d0r4, Em0n
 ```
+
+Flag: `HCMUS-CTF{d4ngErous_eVal}`

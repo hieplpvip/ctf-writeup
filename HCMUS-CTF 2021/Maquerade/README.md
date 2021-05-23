@@ -9,3 +9,5 @@ UPDATED: The alternative file that you can find is now: https://drive.google.com
 
 author: pakkunandy
 ```
+
+Flag: `HCMUS-CTF{Just_Network_Stuff_897268$}`

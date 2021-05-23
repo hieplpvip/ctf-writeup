@@ -9,3 +9,5 @@ https://drive.google.com/drive/folders/1dKvYUzymA_GgdmB2nyH8MwGQlSOmnsa4?usp=sha
 
 author: mugi
 ```
+
+Flag: `HCMUS-CTF{fault-attack}`

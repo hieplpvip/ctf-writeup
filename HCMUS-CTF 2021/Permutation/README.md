@@ -9,3 +9,5 @@ https://drive.google.com/drive/folders/1eS4bTtOuNvrAnwIXFeMGT3v1ZAKiSkGN?usp=sha
 
 author: vuonghy2442
 ```
+
+Flag: `HCMUS-CTF{discrete_log_is_easy_on_permutation_group}`

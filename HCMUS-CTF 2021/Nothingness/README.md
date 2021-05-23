@@ -9,3 +9,5 @@ I just leaked this website from HCMUS-CTF, but seem like it's under construction
 
 authors: Em0n
 ```
+
+Flag: `HCMUS-CTF{404_teMpl4t3_1njEctIon}`

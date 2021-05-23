@@ -9,3 +9,5 @@ https://drive.google.com/drive/folders/1VFYLdZC8e0NLflUUZaF68utf66LPhayc?usp=sha
 
 author: mugi
 ```
+
+Flag: `HCMUS-CTF{https://en.wikipedia.org/wiki/Data_Encryption_Standard#Minor_cryptanalytic_properties}`

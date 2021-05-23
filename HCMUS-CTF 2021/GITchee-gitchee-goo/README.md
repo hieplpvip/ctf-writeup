@@ -10,3 +10,5 @@ That's what my baby says...
 
 authors: d0r4, Em0n
 ```
+
+Flag: `HCMUS-CTF{mOt1vaT3d_by_0ld_m3Mory}`

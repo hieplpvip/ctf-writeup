@@ -9,3 +9,5 @@ https://drive.google.com/drive/folders/1NgygZjPeOI8isi2q5RVCB-fEu6XWNWJE?usp=sha
 
 author: pakkunandy
 ```
+
+Flag: `HCMUS_CTF{cracking_for_fun}`
