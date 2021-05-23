@@ -1,0 +1,9 @@
+## bhide
+
+```
+I hide a secret in the picture. Can you find it?
+
+https://mega.nz/file/69hymQRQ#CxS_ez76pNl3PcCqHrawuLS0jIh_RHnY7TstixTY7jE
+
+author: xikhud
+```
