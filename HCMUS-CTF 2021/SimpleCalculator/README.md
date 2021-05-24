@@ -116,4 +116,4 @@ echo "(~" . urlencode(~"exec") . ")(~" . urlencode(~"rm a") . ")" . "\n";     //
 ?>
 ```
 
-Flag: `HCMUS-CTF{d4ngErous_eVal}`
+**Flag:** `HCMUS-CTF{d4ngErous_eVal}`

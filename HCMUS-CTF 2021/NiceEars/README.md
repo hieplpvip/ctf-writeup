@@ -12,4 +12,4 @@ https://mega.nz/file/PlAWjJyK#SjVAs9T9OV_ViQrXIHeV_eXq-FfNC9B6ZvIzjVAPsYE
 author: pakkunandy
 ```
 
-Flag: `HCMUS-CTF{M0nK3y_doNkeY}`
+**Flag:** `HCMUS-CTF{M0nK3y_doNkeY}`

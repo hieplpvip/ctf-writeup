@@ -44,4 +44,4 @@ $ python script.py
 [+] column value so far: HCMUS-CTF{easY_sql_1nj3ctIon}
 ```
 
-Flag: `HCMUS-CTF{easY_sql_1nj3ctIon}`
+**Flag:** `HCMUS-CTF{easY_sql_1nj3ctIon}`

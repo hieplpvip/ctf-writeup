@@ -10,4 +10,4 @@ https://drive.google.com/file/d/1VpA49XbgDeDJGM_h0UA3IE7lvk7mLX_I/view
 author: pakkunandy
 ```
 
-Flag: `HCMUS-CTF{peppa-9876543-BAAAM-A1z9-3133337}`
+**Flag:** `HCMUS-CTF{peppa-9876543-BAAAM-A1z9-3133337}`

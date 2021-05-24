@@ -8,4 +8,4 @@ nc 61.28.237.24 30207
 author: xikhud
 ```
 
-Flag: `HCMUS-CTF{0ff_by_on3}`
+**Flag:** `HCMUS-CTF{0ff_by_on3}`

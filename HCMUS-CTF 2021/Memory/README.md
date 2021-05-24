@@ -86,4 +86,4 @@ We find a Google Drive URL right at the top: https://drive.google.com/file/d/1BB
 
 Downloading it and extracting with the key, we get our flag.
 
-Flag: `HCMUS-CTF{simple_memory_forensics_stuff}`
+**Flag:** `HCMUS-CTF{simple_memory_forensics_stuff}`

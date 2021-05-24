@@ -10,4 +10,4 @@ https://drive.google.com/drive/folders/1wtPwzswg4H-Grs9WucxHJIo6paWxJS3E?usp=sha
 author: pakkunandy
 ```
 
-Flag: `HCMUS-CTF{we_know_that_you_can_do_simple_XOR_54313154abcfe54af2ecab}`
+**Flag:** `HCMUS-CTF{we_know_that_you_can_do_simple_XOR_54313154abcfe54af2ecab}`

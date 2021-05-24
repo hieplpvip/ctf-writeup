@@ -52,4 +52,4 @@ $ cat .flag3.txt
 _linux_command_line}
 ```
 
-Flag: `HCMUS-CTF{this_is_used_to_test_linux_command_line}`
+**Flag:** `HCMUS-CTF{this_is_used_to_test_linux_command_line}`

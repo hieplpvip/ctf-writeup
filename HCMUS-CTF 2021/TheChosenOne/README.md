@@ -14,4 +14,4 @@ nc 61.28.237.24 30300
 author: pakkunandy
 ```
 
-Flag: `HCMUS-CTF{You_Can_4ttack_A3S!?!}`
+**Flag:** `HCMUS-CTF{You_Can_4ttack_A3S!?!}`

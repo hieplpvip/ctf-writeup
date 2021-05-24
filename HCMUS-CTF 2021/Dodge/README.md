@@ -21,4 +21,4 @@ ctf@dodge-5bf54d476f-sfnpv:~$ cat flag.txt
 HCMUS-CTF{You_know_some_command_line_stuff}
 ```
 
-Flag: `HCMUS-CTF{You_know_some_command_line_stuff}`
+**Flag:** `HCMUS-CTF{You_know_some_command_line_stuff}`

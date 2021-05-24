@@ -11,4 +11,12 @@ That's what my baby says...
 authors: d0r4, Em0n
 ```
 
-Flag: `HCMUS-CTF{mOt1vaT3d_by_0ld_m3Mory}`
+Now just checkout each commit until we see the flag:
+
+```shell
+git checkout HEAD~1
+```
+
+![](Norm.jpg)
+
+**Flag:** `HCMUS-CTF{mOt1vaT3d_by_0ld_m3Mory}`

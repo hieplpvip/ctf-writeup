@@ -19,4 +19,4 @@ python pyinstxtractor.py pydata.dump
 strings pydata.dump_extracted/authentication.pyc
 ```
 
-Flag: `HCMUS-CTF{Python_is_fun_somehow}`
+**Flag:** `HCMUS-CTF{Python_is_fun_somehow}`

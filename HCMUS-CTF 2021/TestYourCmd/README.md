@@ -66,4 +66,4 @@ wrote extracted data to "flag.txt".
 0
 ```
 
-Flag: `HCMUS-CTF{at_least_I_hope_you_can_code_a_bit}`
+**Flag:** `HCMUS-CTF{at_least_I_hope_you_can_code_a_bit}`

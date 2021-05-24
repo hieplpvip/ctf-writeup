@@ -10,4 +10,4 @@ https://mega.nz/file/69hymQRQ#CxS_ez76pNl3PcCqHrawuLS0jIh_RHnY7TstixTY7jE
 author: xikhud
 ```
 
-Flag: `HCMUS-CTF{i_dont_use_LSB}`
+**Flag:** `HCMUS-CTF{i_dont_use_LSB}`

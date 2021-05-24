@@ -35,4 +35,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 HCMUS-CTF{privilege_escalation_is_fun!!!}
 ```
 
-Flag: `HCMUS-CTF{privilege_escalation_is_fun!!!}`
+**Flag:** `HCMUS-CTF{privilege_escalation_is_fun!!!}`

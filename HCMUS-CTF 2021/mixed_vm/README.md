@@ -10,4 +10,4 @@ https://drive.google.com/drive/folders/1vCpYheehEwsTK3PqSicY0Lx1JyVtp_GK?usp=sha
 author: xikhud
 ```
 
-Flag: `HCMUS-CTF{i_like_using_vm_to_protect_my_program}`
+**Flag:** `HCMUS-CTF{i_like_using_vm_to_protect_my_program}`

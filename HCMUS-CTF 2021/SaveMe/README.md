@@ -50,4 +50,4 @@ with open('fixed.jpg', 'wb') as f:
 
 ![](fixed.jpg)
 
-Flag: `HCMUS-CTF{You_Know_How_To_Manipulate_Images_1324587}`
+**Flag:** `HCMUS-CTF{You_Know_How_To_Manipulate_Images_1324587}`

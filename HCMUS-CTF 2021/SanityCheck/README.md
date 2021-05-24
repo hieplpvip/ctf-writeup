@@ -10,4 +10,4 @@ https://drive.google.com/drive/folders/1-KZyd1Cy9OdawguXU-x3uHMbRag3SoIT?usp=sha
 author: pakkunandy
 ```
 
-Flag: `HCMUS-CTF{We_are_Blackpinker_welcome_to_hcmus_ctf_2021}`
+**Flag:** `HCMUS-CTF{We_are_Blackpinker_welcome_to_hcmus_ctf_2021}`

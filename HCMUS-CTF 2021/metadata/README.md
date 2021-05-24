@@ -14,4 +14,4 @@ Find that image on Docker Hub and check its layers:
 
 ![](layers.png)
 
-Flag: `HCMUS-CTF{d0ck6r_1mag6_1nsp6ct}`
+**Flag:** `HCMUS-CTF{d0ck6r_1mag6_1nsp6ct}`
