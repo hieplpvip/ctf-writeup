@@ -10,6 +10,15 @@ Some restriction should prevent this simple calculator from being hacked. Right?
 authors: d0r4, Em0n
 ```
 
+![](image0.png)
+![](image1.png)
+![](image2.png)
+![](image3.png)
+![](image4.png)
+![](image5.png)
+![](image6.png)
+![](image7.png)
+
 We are given a web form that allows us to input values and operations to a calculator and the results will be printed.
 
 Some quick experiments reveal that we can not use neither letters nor quotes. The input must also be shorter than 20 characters.
@@ -78,7 +87,7 @@ Output of `cat /f*>a`:
 HCMUS-CTF{d4ngErous_eVal}
 ```
 
-For the sake of fun, we can also dump `index.php`:
+Just for the sake of completeness, we can also dump `index.php`:
 
 ```php
 <?php

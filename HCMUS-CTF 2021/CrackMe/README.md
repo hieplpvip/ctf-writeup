@@ -10,9 +10,15 @@ https://drive.google.com/drive/folders/1NgygZjPeOI8isi2q5RVCB-fEu6XWNWJE?usp=sha
 author: pakkunandy
 ```
 
-This challenge consists of two phases. In phase 1 you need to crack a password, while in phase 2 you need to crack a SSH private key.
+This challenge consists of two phases. In phase 1 you need to crack a password, while in phase 2 you need to crack an SSH private key.
 
 ### Phase 1
+
+There is a hint in `README.md`:
+
+```
+Crack that hashed to plaintext. The base64 of the plaintext is the password to open the zip file.
+```
 
 Create file `mypasswd` with content:
 
@@ -35,6 +41,12 @@ Session completed
 Encode `playboy123` using Base64 and we get the password for `phase2.zip`: `cGxheWJveTEyMw==`
 
 ### Phase 2
+
+There is a similar hint in `README.md`:
+
+```
+Crack it to find the passphrase. The password to opened the zip file is the base64 of that passphrase.
+```
 
 Use `ssh2john` to turn `id_rsa` into a hash file for John the Ripper to crack:
 

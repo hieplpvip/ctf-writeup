@@ -1,5 +1,6 @@
 ---
 title: 'HCMUS-CTF 2021 Qualification Round – NaN Writeup'
+subtitle: 'Written by hieplpvip'
 ---
 
 [//]: To compile this run:

