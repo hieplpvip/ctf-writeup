@@ -1,4 +1,4 @@
-## CrackMe
+## CrackMe (100 points)
 
 #### Solved by hieplpvip
 

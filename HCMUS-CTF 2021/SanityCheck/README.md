@@ -1,4 +1,4 @@
-## SanityCheck
+## SanityCheck (50 points)
 
 #### Solved by naul
 

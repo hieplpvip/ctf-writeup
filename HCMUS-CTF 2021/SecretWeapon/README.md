@@ -1,4 +1,4 @@
-## SecretWeapon
+## SecretWeapon (100 points)
 
 #### Solved by nhanlun
 

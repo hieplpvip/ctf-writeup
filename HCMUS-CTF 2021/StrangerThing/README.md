@@ -1,4 +1,4 @@
-## StrangerThing
+## StrangerThing (50 points)
 
 #### Solved by hieplpvip
 

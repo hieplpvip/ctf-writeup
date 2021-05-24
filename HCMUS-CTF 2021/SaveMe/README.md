@@ -1,4 +1,4 @@
-## SaveMe
+## SaveMe (50 points)
 
 #### Solved by hieplpvip
 

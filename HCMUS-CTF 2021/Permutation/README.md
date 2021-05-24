@@ -1,4 +1,4 @@
-## Permutation
+## Permutation (100 points)
 
 #### Solved by hieplpvip
 

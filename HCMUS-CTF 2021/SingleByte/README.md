@@ -1,4 +1,4 @@
-## SingleByte
+## SingleByte (50 points)
 
 #### Solved by naul
 

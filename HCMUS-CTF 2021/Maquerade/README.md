@@ -1,4 +1,4 @@
-## Maquerade
+## Maquerade (100 points)
 
 #### Solved by Fluoxetine
 

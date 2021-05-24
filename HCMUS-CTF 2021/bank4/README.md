@@ -1,4 +1,4 @@
-## bank4
+## bank4 (200 points)
 
 #### Solved by nhanlun
 

@@ -1,4 +1,4 @@
-## SimpleCalculator
+## SimpleCalculator (100 points)
 
 #### Solved by Fluoxetine
 

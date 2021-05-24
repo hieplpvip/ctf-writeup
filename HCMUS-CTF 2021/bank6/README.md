@@ -1,4 +1,4 @@
-## bank6
+## bank6 (200 points)
 
 #### Solved by nhanlun
 

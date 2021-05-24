@@ -1,4 +1,4 @@
-## GITchee-gitchee-goo
+## GITchee-gitchee-goo (200 points)
 
 #### Solved by Fluoxetine
 

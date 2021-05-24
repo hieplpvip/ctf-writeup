@@ -1,4 +1,4 @@
-## mixed_vm
+## mixed_vm (200 points)
 
 #### Solved by hieplpvip
 

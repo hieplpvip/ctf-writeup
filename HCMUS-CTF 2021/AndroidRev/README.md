@@ -1,4 +1,4 @@
-## AndroidRev
+## AndroidRev (200 points)
 
 #### Solved by nhanlun
 

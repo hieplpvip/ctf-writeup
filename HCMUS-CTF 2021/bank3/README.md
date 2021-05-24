@@ -1,4 +1,4 @@
-## bank3
+## bank3 (100 points)
 
 #### Solved by hieplpvip
 

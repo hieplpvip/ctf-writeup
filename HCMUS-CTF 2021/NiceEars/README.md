@@ -1,4 +1,4 @@
-## NiceEars
+## NiceEars (50 points)
 
 #### Solved by naul
 

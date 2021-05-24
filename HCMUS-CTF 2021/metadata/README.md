@@ -1,4 +1,4 @@
-## metadata
+## metadata (50 points)
 
 #### Solved by hieplpvip
 

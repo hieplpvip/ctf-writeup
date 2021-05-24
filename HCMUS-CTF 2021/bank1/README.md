@@ -1,4 +1,4 @@
-## bank1
+## bank1 (50 points)
 
 #### Solved by hieplpvip
 

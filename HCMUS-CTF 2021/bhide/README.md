@@ -1,4 +1,4 @@
-## bhide
+## bhide (100 points)
 
 #### Solved by hieplpvip
 

@@ -1,4 +1,4 @@
-## mybirthday
+## mybirthday (50 points)
 
 #### Solved by nhanlun
 

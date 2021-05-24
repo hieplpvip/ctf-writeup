@@ -1,4 +1,4 @@
-## TheChosenOne
+## TheChosenOne (100 points)
 
 #### Solved by naul
 

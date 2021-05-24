@@ -1,4 +1,4 @@
-## EscapeMe
+## EscapeMe (100 points)
 
 #### Solved by hieplpvip
 

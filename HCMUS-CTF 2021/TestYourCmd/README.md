@@ -1,4 +1,4 @@
-## TestYourCmd
+## TestYourCmd (200 points)
 
 #### Solved by hieplpvip
 

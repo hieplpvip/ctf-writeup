@@ -1,4 +1,4 @@
-## Memory
+## Memory (200 points)
 
 #### Solved by hieplpvip
 

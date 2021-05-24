@@ -1,4 +1,4 @@
-## WeirdProtocol
+## WeirdProtocol (200 points)
 
 #### Solved by naul
 

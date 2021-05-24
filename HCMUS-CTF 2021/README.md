@@ -2,7 +2,7 @@
 
 ## Qualification Round
 
-My team (NaN) solved all challenges after 26 hours 33 minutes and took the second place.
+This is my very first CTF competition. My team (NaN) solved all challenges after 26 hours 33 minutes and took the second place.
 
 Team members:
 

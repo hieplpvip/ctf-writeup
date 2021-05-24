@@ -1,4 +1,4 @@
-## Faded
+## Faded (100 points)
 
 #### Solved by hieplpvip
 

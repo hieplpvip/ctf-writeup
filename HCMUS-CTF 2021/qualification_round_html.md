@@ -7,7 +7,7 @@ subtitle: 'Written by hieplpvip'
 [//]: wget https://raw.githubusercontent.com/tajmone/pandoc-goodies/master/templates/html5/github/GitHub.html5
 [//]: pandoc qualification_round_html.md --template=GitHub.html5 --self-contained --filter pandoc-include -o qualification_round.html
 
-Our team (NaN) solved all challenges after 26 hours 33 minutes and took the second place.
+This is my very first CTF competition. My team (NaN) solved all challenges after 26 hours 33 minutes and took the second place.
 
 Team members:
 
