@@ -76,7 +76,7 @@ Cmd #15 @ 0x1b0158:
 Cmd #16 @ 0x1ff5a0:
 ```
 
-Now we know the key is `SuP3r_P@zzw0rD`. The flag is online, so let "`strings`" some URLs:
+Now we know the key is `SuP3r_P@zzw0rD`. The flag is online, so let use `strings` to find some URLs:
 
 ```shell
 strings memory.raw | grep https:// > https.txt
@@ -88,6 +88,15 @@ Downloading it and extracting with the key, we get our flag.
 
 **Flag:** `HCMUS-CTF{simple_memory_forensics_stuff}`
 
+### Appendix
+
+To get the URL, you can also use [volatility-plugins](https://github.com/superponible/volatility-plugins) to dump Chrome history.
+
+![](image0.png)
+
+During contest, I use the standalone version of `volatility` which somehow causes some problems which Python modules and therefore `volatility-plugins`. Installing `volatility` from source fixes it.
+
 ### References
 
 - [https://programmersought.com/article/91432282131/](https://programmersought.com/article/91432282131/)
+- [https://blog.bi0s.in/2019/09/24/Forensics/InCTFi19-NotchItUp/](https://blog.bi0s.in/2019/09/24/Forensics/InCTFi19-NotchItUp/)

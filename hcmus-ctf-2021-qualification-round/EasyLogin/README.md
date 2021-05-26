@@ -112,3 +112,7 @@ Output:
 ```
 
 **Flag:** `HCMUS-CTF{easY_sql_1nj3ctIon}`
+
+### References
+
+- [https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/SQLite%20Injection.md](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/SQLite%20Injection.md)
