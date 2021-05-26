@@ -1,6 +1,4 @@
-# HCMUS-CTF 2021
-
-## Qualification Round
+# HCMUS-CTF 2021 Qualification Round Writeup
 
 This is my very first CTF competition. My team (NaN) solved all challenges after 26 hours 33 minutes and took the second place.
 

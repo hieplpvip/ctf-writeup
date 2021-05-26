@@ -28,7 +28,7 @@ $ grep -l "Send To: Ronaldo" $(grep -l -r "From: Messi" .)
 ./.log/10/9fb0dbf9c55553c0c4d83b2ea36d0234.log
 ```
 
-Let's read them:
+Let's read all of them:
 
 ```shell
 $ grep -l "Send To: Ronaldo" $(grep -l -r "From: Messi" .) | xargs cat
@@ -39,7 +39,7 @@ Content:
 U3VQZXJfR29sZF8zeW1BckpyLg==
 [SOME RANDOM DATA]
 
-$ echo U3VQZXJfR29sZF8zeW1BckpyLg== | base64 -d
+$ echo -n U3VQZXJfR29sZF8zeW1BckpyLg== | base64 -d
 SuPer_Gold_3ymArJr.
 ```
 

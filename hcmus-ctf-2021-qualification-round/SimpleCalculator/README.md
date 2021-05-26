@@ -126,3 +126,8 @@ echo "(~" . urlencode(~"exec") . ")(~" . urlencode(~"rm a") . ")" . "\n";     //
 ```
 
 **Flag:** `HCMUS-CTF{d4ngErous_eVal}`
+
+### References
+
+- [https://waituck.sg/web/rctf2020/php/2020/06/10/rctf-2020-calc-writeup.html](https://waituck.sg/web/rctf2020/php/2020/06/10/rctf-2020-calc-writeup.html)
+- [https://github.com/mengdaya/Web-CTF-Cheatsheet](https://github.com/mengdaya/Web-CTF-Cheatsheet)

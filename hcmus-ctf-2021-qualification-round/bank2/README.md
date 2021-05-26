@@ -8,7 +8,7 @@ nc 61.28.237.24 30203
 author: xikhud
 ```
 
-Open `bank2` with IDA:
+Decompile `bank2` with IDA:
 
 ```cpp
 int __cdecl main(int argc, const char **argv, const char **envp)
@@ -42,7 +42,7 @@ void getFlag()
 }
 ```
 
-We use buffer overflow to overwrite `balance` with 420420 to pass the check:
+We exploit buffer overflow to overwrite `balance` with 420420 to pass the check:
 
 ```py
 from pwn import *

@@ -36,3 +36,7 @@ HCMUS-CTF{privilege_escalation_is_fun!!!}
 ```
 
 **Flag:** `HCMUS-CTF{privilege_escalation_is_fun!!!}`
+
+### References
+
+- [https://github.com/uppusaikiran/awesome-ctf-cheatsheet#privilige-escalation](https://github.com/uppusaikiran/awesome-ctf-cheatsheet#privilige-escalation)

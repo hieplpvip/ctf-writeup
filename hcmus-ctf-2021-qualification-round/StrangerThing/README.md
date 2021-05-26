@@ -48,6 +48,9 @@ HCMUS-CTF{this
 $ cat './-flag 2.txt'
 _is_used_to_test
 $ cd secret
+$ ls
+$ ls -a
+.  ..  .flag3.txt
 $ cat .flag3.txt
 _linux_command_line}
 ```

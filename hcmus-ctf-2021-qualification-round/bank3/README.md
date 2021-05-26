@@ -23,7 +23,7 @@ void Register()
 }
 ```
 
-We use buffer overflow to overwrite the return address with the address of `getFlag`:
+We exploit buffer overflow to overwrite the return address with the address of `getFlag`:
 
 ```py
 from pwn import *

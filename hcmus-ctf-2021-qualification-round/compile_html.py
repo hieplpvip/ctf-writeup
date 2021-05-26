@@ -13,9 +13,13 @@ with open(sys.argv[1], 'r') as f:
 include = re.findall(r'!include (.*)', md)
 
 for challenge in include:
+  if not os.path.isfile(challenge + '/README.md'):
+    md = md.replace('!include ' + challenge, '')
+    continue
+
   with open(challenge + '/README.md', 'r') as f:
     content = f.read()
-    content = re.sub(r'!\[\]\((.*)\)', '![](' + challenge + r'/\g<1>)', content)
+    content = re.sub(r'!\[.*\]\((.*)\)', '![](' + challenge + r'/\g<1>)', content)
     md = md.replace('!include ' + challenge, content)
 
 if not os.path.isfile('GitHub.html5'):

@@ -62,3 +62,7 @@ flask
 ```
 
 **Flag:** `HCMUS-CTF{404_teMpl4t3_1njEctIon}`
+
+### References
+
+- [https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/README.md#jinja2---remote-code-execution](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/README.md#jinja2---remote-code-execution)

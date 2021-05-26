@@ -22,3 +22,7 @@ HCMUS-CTF{You_know_some_command_line_stuff}
 ```
 
 **Flag:** `HCMUS-CTF{You_know_some_command_line_stuff}`
+
+### References
+
+- [https://www.hackingarticles.in/multiple-methods-to-bypass-restricted-shell/](https://www.hackingarticles.in/multiple-methods-to-bypass-restricted-shell/)
