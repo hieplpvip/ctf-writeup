@@ -12,7 +12,46 @@ https://drive.google.com/drive/folders/1eS4bTtOuNvrAnwIXFeMGT3v1ZAKiSkGN?usp=sha
 author: vuonghy2442
 ```
 
-I wrote two scripts to solve this challenge:
+```py
+from typing import List
+import random
+
+def get_permutation(n : int) -> List[int]:
+    arr = list(range(n))
+    random.shuffle(arr)
+    return arr
+
+def compose_permutation(p1 : List[int], p2 : List[int]):
+    return [p1[x] for x in p2]
+
+def permutation_power(p : List[int], n : int) -> List[int]:
+    if n == 0:
+        return list(range(len(p)))
+    if n == 1:
+        return p
+
+    x = permutation_power(p, n // 2)
+    x = compose_permutation(x, x)
+    if n % 2 == 1:
+        x = compose_permutation(x, p)
+    return x
+
+
+with open("flag.txt", "rb") as f:
+    flag = int.from_bytes(f.read().strip(), byteorder='big')
+
+perm = get_permutation(512)
+print(perm)
+print(permutation_power(perm, flag))
+```
+
+We are given a permutation of length 512. The flag is read from `flag.txt` and is treated as a number to which the permutation is raised.
+
+I'm not an expert in discrete mathematics, but my experience with permutations in competitive programing told me that the cycle decomposition of a permutation would not change if it is raised to arbitrary power. The order of elements in each cycle would change, though. However, the order in each cycle will repeat after `len(cycle)`.
+
+I used that to generate a system of congruences and used Chinese remainder theorem to solve it.
+
+### Scripts
 
 - `get_remainder.py`:
 
@@ -165,3 +204,5 @@ Flag: HCMUS-CTF{discrete_log_is_easy_on_permutation_group}
 ```
 
 **Flag:** `HCMUS-CTF{discrete_log_is_easy_on_permutation_group}`
+
+P/s: The server was down after I ran `get_remainder.py`. Not sure if it was my error...

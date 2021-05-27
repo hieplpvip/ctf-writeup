@@ -20,22 +20,25 @@ There is a hint in `README.md`:
 Crack that hashed to plaintext. The base64 of the plaintext is the password to open the zip file.
 ```
 
-Create file `mypasswd` with content:
+Create file `hash`:
 
 ```
-root:$6$OQy2HYdK1F0RuFLv$OEsWe98lUzVkAiZy0.BDj.1GwjRtD72QZtQ7XugSdGss6TEXxnu4b3NWaVKBoSFtJ/LlG59l2sh4nLUPIqeLV1:0:0:root:/root:/bin/bash
+$6$OQy2HYdK1F0RuFLv$OEsWe98lUzVkAiZy0.BDj.1GwjRtD72QZtQ7XugSdGss6TEXxnu4b3NWaVKBoSFtJ/LlG59l2sh4nLUPIqeLV1
 ```
 
 Use John the Ripper to crack it with `rockyou` wordlist:
 
 ```
-$ john --wordlist=/usr/share/wordlists/rockyou.txt mypasswd
-Loaded 1 password hash (crypt, generic crypt(3) [?/64])
+$ john --wordlist=/usr/share/wordlists/rockyou.txt hash
+Using default input encoding: UTF-8
+Loaded 1 password hash (sha512crypt, crypt(3) $6$ [SHA512 256/256 AVX2 4x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Will run 20 OpenMP threads
 Press 'q' or Ctrl-C to abort, almost any other key for status
-playboy123       (root)
-1g 0:00:00:05 100% 0.1897g/s 674.0p/s 674.0c/s 674.0C/s girls..01234
+playboy123       (?)
+1g 0:00:00:00 DONE (2021-05-27 04:18) 4.347g/s 22260p/s 22260c/s 22260C/s gators..allison1
 Use the "--show" option to display all of the cracked passwords reliably
-Session completed
+Session completed.
 ```
 
 Encode `playboy123` using Base64 and we get the password for `phase2.zip`: `cGxheWJveTEyMw==`
@@ -60,16 +63,15 @@ Again, use John the Ripper to crack it with `rockyou` wordlist:
 ```
 $ john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa.hash
 Using default input encoding: UTF-8
-Loaded 1 password hash (SSH [RSA/DSA/EC/OPENSSH (SSH private keys) 32/64])
+Loaded 1 password hash (SSH, SSH private key [RSA/DSA/EC/OPENSSH 32/64])
 Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 0 for all loaded hashes
 Cost 2 (iteration count) is 1 for all loaded hashes
-Will run 16 OpenMP threads
-Note: This format may emit false positives, so it will keep trying even after
-finding a possible candidate.
+Will run 20 OpenMP threads
 Press 'q' or Ctrl-C to abort, almost any other key for status
-felecity (id_rsa)
-1g 0:00:00:01 DONE (2021-05-24 18:22) 0.7692g/s 11032Kp/s 11032Kc/s 11032KC/s 0125457423 ..\*7¡Vamos!
-Session completed
+felecity         (id_rsa)
+1g 0:00:00:00 DONE (2021-05-27 04:19) 12.50g/s 3422Kp/s 3422Kc/s 3422KC/s felix19..faithers
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed.
 ```
 
 Encode `felecity` using Base64 and we get the password for `phase2.zip`: `cGxheWJveTEyMw==`

@@ -39,4 +39,4 @@ HCMUS-CTF{privilege_escalation_is_fun!!!}
 
 ### References
 
-- [https://github.com/uppusaikiran/awesome-ctf-cheatsheet#privilige-escalation](https://github.com/uppusaikiran/awesome-ctf-cheatsheet#privilige-escalation)
+- [https://www.hackingarticles.in/linux-privilege-escalation-using-exploiting-sudo-rights/](https://www.hackingarticles.in/linux-privilege-escalation-using-exploiting-sudo-rights/)
