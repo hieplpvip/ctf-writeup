@@ -25,6 +25,7 @@ for challenge in include:
 if not os.path.isfile('GitHub.html5'):
   os.system('wget https://raw.githubusercontent.com/tajmone/pandoc-goodies/master/templates/html5/github/GitHub.html5')
 
-with tempfile.NamedTemporaryFile(suffix='.md') as f:
-  f.write(md.encode('utf-8'))
+with tempfile.NamedTemporaryFile('w', suffix='.md') as f:
+  f.write(md)
+  f.flush()
   os.system('pandoc %s --template=GitHub.html5 --self-contained -o writeup.html' % f.name)

@@ -47,7 +47,7 @@ print(permutation_power(perm, flag))
 
 We are given a permutation of length 512. The flag is read from `flag.txt` and is treated as a number to which the permutation is raised.
 
-I'm not an expert in discrete mathematics, but my experience with permutations in competitive programing told me that the cycle decomposition of a permutation would not change if it is raised to arbitrary power. The order of elements in each cycle would change, though. However, the order in each cycle will repeat after `len(cycle)`.
+I'm not an expert in discrete mathematics, but my experience with permutations in competitive programing told me that the cycle decomposition of a permutation would not change if it is raised to an arbitrary power. The order of elements in each cycle would change, though. However, the order in each cycle will repeat after `len(cycle)`.
 
 I used that to generate a system of congruences and used Chinese remainder theorem to solve it.
 
