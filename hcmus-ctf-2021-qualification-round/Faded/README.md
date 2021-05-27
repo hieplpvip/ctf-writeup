@@ -10,7 +10,7 @@ https://drive.google.com/drive/folders/1iwEngS8LISDao0S_SCzmPxf_SJB2ISCe?usp=sha
 author: pakkunandy
 ```
 
-The file is created using PyInstaller. We use pyinstxtractor to extract it:
+The file is created using `PyInstaller`. We use `pyinstxtractor` to extract it:
 
 ```shell
 wget https://raw.githubusercontent.com/extremecoders-re/pyinstxtractor/master/pyinstxtractor.py
