@@ -20,7 +20,7 @@ Let's try enter some fake flag:
 
 ![](image1.png)
 
-So the first two blocks (`HCMU` and `S-CT`) are correct. `F{12} is wrong so the program stops there, skipping `345}`. We can now conclude that the password is the flag.
+So the first two blocks (`HCMU` and `S-CT`) are correct. `F{12}` is wrong so the program stops there, skipping `345}`. We can now conclude that the password is the flag.
 
 Now we have several options:
 

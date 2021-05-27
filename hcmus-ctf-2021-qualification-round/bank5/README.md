@@ -12,7 +12,7 @@ Decompiling `bank5` with IDA, we see that `getFlag` no longer exists. NX is also
 
 ![](checksec.png)
 
-Our goal is to call `execve("/bin/sh", NULL, NULL)`. We need to setup the register as follows:
+Our goal is to call `execve("/bin/sh", NULL, NULL)`. We need to setup the registers as follows:
 
 ```
 EAX = 11 - The execve syscall number

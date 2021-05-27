@@ -54,7 +54,7 @@ Crack it to find the passphrase. The password to opened the zip file is the base
 Use `ssh2john` to turn `id_rsa` into a hash file for John the Ripper to crack:
 
 ```shell
-wget https://raw.githubusercontent.com/magnumripper/JohnTheRipper/bleeding-jumbo/run/ssh2john.py
+wget https://raw.githubusercontent.com/openwall/john/bleeding-jumbo/run/ssh2john.py
 python ssh2john.py id_rsa > id_rsa.hash
 ```
 

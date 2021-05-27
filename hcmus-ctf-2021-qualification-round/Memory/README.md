@@ -82,7 +82,7 @@ Now we know the key is `SuP3r_P@zzw0rD`. The flag is online, so let use `strings
 strings memory.raw | grep https:// > https.txt
 ```
 
-We find a Google Drive URL right at the top: https://drive.google.com/file/d/1BBtY2q5h89Wkml6DLwlUSMJUUls3khtE/view?usp=sharing
+We find a Google Drive URL right at the top: [https://drive.google.com/file/d/1BBtY2q5h89Wkml6DLwlUSMJUUls3khtE/view?usp=sharing](https://drive.google.com/file/d/1BBtY2q5h89Wkml6DLwlUSMJUUls3khtE/view?usp=sharing)
 
 Downloading it and extracting with the key, we get our flag.
 
