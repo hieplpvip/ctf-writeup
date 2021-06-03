@@ -31,7 +31,7 @@ Python 3.6.9 (default, Jan 26 2021, 15:33:00)
 [GCC 8.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import os
->>> os.system("cat /home/ctf/flag.txt")
+>>> os.system('cat /home/ctf/flag.txt')
 HCMUS-CTF{privilege_escalation_is_fun!!!}
 ```
 

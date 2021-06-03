@@ -37,7 +37,7 @@ def permutation_power(p : List[int], n : int) -> List[int]:
     return x
 
 
-with open("flag.txt", "rb") as f:
+with open('flag.txt', 'rb') as f:
     flag = int.from_bytes(f.read().strip(), byteorder='big')
 
 perm = get_permutation(512)

