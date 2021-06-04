@@ -10,7 +10,15 @@ author: xikhud
 
 Decompiling `bank5` with IDA, we see that `getFlag` no longer exists. NX is also enabled, so we can not inject shellcode. However, as `bank5` doesn't have PIE enabled and uses gets (which accepts null bytes) to read our input, we can use ROP.
 
-![](checksec.png)
+```
+$ pwn checksec bank5
+[*] '/home/hieple/bank5'
+    Arch:     i386-32-little
+    RELRO:    Partial RELRO
+    Stack:    Canary found
+    NX:       NX enabled
+    PIE:      No PIE (0x8048000)
+```
 
 Our goal is to call `execve("/bin/sh", NULL, NULL)`. We need to setup the registers as follows:
 
