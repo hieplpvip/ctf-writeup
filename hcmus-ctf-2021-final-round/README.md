@@ -1,5 +1,7 @@
 # HCMUS-CTF 2021 Final Round Writeup
 
+Another second place finish...
+
 Team members:
 
 - naul (Pham Kha Luan)
