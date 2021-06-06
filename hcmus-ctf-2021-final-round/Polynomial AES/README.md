@@ -1,5 +1,7 @@
 ## Polynomial AES (100 points)
 
+#### Solved by naul
+
 ```
 I've Been Running This Code for 300 Years and Maxed Out AES' Security
 
@@ -9,3 +11,5 @@ nc 61.28.237.24 30306
 
 Author: mugi
 ```
+
+**Flag:** `HCMUS-CTF{learn-algebra}`

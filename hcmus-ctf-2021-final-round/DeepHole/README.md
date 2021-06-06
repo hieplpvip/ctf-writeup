@@ -10,5 +10,6 @@ Author: pakkunandy
 
 ### Hint 1
 
-```
+````
 rockyou.txt could help you in the first step!```
+````

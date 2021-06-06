@@ -1,5 +1,7 @@
 ## CuteShopV2 (200 points)
 
+#### Solved by Fluoxetine
+
 ```
 My cute website got hacked last year, but now I've know the secret jutsu, no one could break it anymore.
 
@@ -7,3 +9,5 @@ My cute website got hacked last year, but now I've know the secret jutsu, no one
 
 Author: em0n
 ```
+
+**Flag:** `HCMUS-CTF{rac3-t0-The-Fl444g}`
